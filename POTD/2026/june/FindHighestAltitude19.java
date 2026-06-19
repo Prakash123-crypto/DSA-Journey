@@ -1,8 +1,8 @@
 /*
 Platform : LeetCode
-Problem  : Find Duplicate Number
-Difficulty : Medium
-Topic : Array, Two Pointers
+Problem  : Finding The Highest Altitude
+Difficulty : Easy
+Topic : Normal Easy
 Date : 19-06-2026
 
 TC : O(n)
