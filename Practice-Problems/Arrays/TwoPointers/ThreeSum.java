@@ -7,26 +7,26 @@ import java.util.*;
 public class ThreeSum {
 
 
-    //brute force O(n*3)
-    public static List<List<Integer>> sum3(int[] arr) {
-        int n = arr.length;
+    // //brute force O(n*3)
+    // public static List<List<Integer>> sum3(int[] arr) {
+    //     int n = arr.length;
 
-        Set<List<Integer>> res = new HashSet<>();
+    //     Set<List<Integer>> res = new HashSet<>();
 
-        for (int i = 0; i < n - 2; i++) {
-            for (int j = i + 1; j < n - 1; j++) {
-                for (int k = j + 1; k < n; k++) {
-                    int sum = arr[i] + arr[j] + arr[k];
-                    if (sum == 0) {
-                        List<Integer> sorted = Arrays.asList(arr[i], arr[j], arr[k]);
-                        Collections.sort(sorted);
-                        res.add(sorted);
-                    }
-                }
-            }
-        }
-        return new ArrayList<>(res);
-    }
+    //     for (int i = 0; i < n - 2; i++) {
+    //         for (int j = i + 1; j < n - 1; j++) {
+    //             for (int k = j + 1; k < n; k++) {
+    //                 int sum = arr[i] + arr[j] + arr[k];
+    //                 if (sum == 0) {
+    //                     List<Integer> sorted = Arrays.asList(arr[i], arr[j], arr[k]);
+    //                     Collections.sort(sorted);
+    //                     res.add(sorted);
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     return new ArrayList<>(res);
+    // }
 
     //optimal two pointer with dynamic window O(n*2)
     public static List<List<Integer>> sum3(int[] arr) {
