@@ -5,6 +5,7 @@ package Practice
 import java.util.HashMap;
 
 /*
+LeetCode -> 904
 firstly what is the question?[1,2,3,2,2]
 we will be having two buckets we can store only two elements from above array
 we need to find the maximum length possible here in this case is [2,3,2,2]
